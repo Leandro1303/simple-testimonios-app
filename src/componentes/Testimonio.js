@@ -15,7 +15,7 @@ function Testimonio(props) {
         <p className='cargo-testimonio'>
           {props.cargo} en <strong>{props.empresa}</strong>
         </p>
-        <p className='texto-testimonio'>"{props.testimonio}"</p>
+        <p className='texto-testimonio' dangerouslySetInnerHTML={{ __html: `"${props.testimonio}"` }} />
       </div>
     </div>
   );
